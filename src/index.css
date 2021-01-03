@@ -1,13 +1,179 @@
+/* Universal Styles */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open sans', sans-serif;
+  color: black;
+  font-size: 16px;
+  background-color: white;
+} 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.grid-container {
+display: grid;
+grid-template-columns: 25rem auto;
+grid-template-rows: 4rem 4.5rem auto;
+width: 100vw;
+height: 100vh;
 }
+
+header {
+grid-area: 1 / 1 / span 1 / span 2;
+}
+
+#bomnav {
+grid-area: 2 / 1 / span 1 / span 2;
+background-color: #BD1C67;
+justify-content: space-between;
+align-content: center;
+padding-left: 30px;
+padding-right: 45px;
+}
+
+#dashboard-left {
+border-right: solid 0.3px #c9c9c9;
+}
+
+
+
+
+/* Header Section */
+
+header {
+    color: rgb(121, 121, 121);
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logo {
+  height: 20px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.nav-container {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+
+}
+
+.upgradebtn, .dropbtn {
+    color: rgb(82, 82, 82);
+    border-style: none;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+#upgradebtn {
+    color: white;
+    background-color: #86A630;
+    border-radius: 4px;
+}
+
+#upgradebtn:hover {
+    background-color: rgb(116, 143, 42);
+}
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    font-size: 12px;
+    position: absolute;
+}
+
+.dropdown-content a {
+  color: rgb(82, 82, 82);
+  border-bottom: solid 0.3px #c9c9c9;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: block;
+  min-width: 150px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+
+
+
+
+ /* Bomnav Section */
+
+#bomnav a {
+color: white;
+background-color: transparent;
+border: none;
+font-size: 1.4rem;
+font-weight: bold;
+height: 60px;
+}
+
+#bnLeft a {
+margin-right: 25px;
+}
+
+#bomnav a:hover {
+color: #8DBF26;
+}
+
+
+ /* Dashboard-Left Section */
+
+
+ /* Dashboard-right Section */
+
+#dashboard-right {
+  margin: 0 15% 0 15%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+ #dashboard-right h1 {
+   text-align: center; 
+   color: #5d001e;
+   font-size: 1.8rem;
+   font-weight: bold;
+   margin-top: 25px;
+   padding-bottom: 65px;
+ }
+
+ #tools {
+  justify-content: center;
+  flex-wrap: wrap;
+
+ }
+
+ .tool a {
+
+   border: solid 0.8px #5D001E;
+   color: #5d001e;
+   font-weight: bolder;
+   border-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   line-height: 1.3rem;
+   height: 3.5rem;
+   width: 9rem;
+   margin: 1.5rem;
+   padding: 20px 10px;
+ }
+
+.tool a:hover {
+  background-color: #e3e2df;
+} 
